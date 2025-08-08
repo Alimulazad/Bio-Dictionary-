@@ -744,9 +744,9 @@
           <button class="popup-close-btn" onclick="renderHistoryPanel()" style="float:right; margin-top:5px; margin-bottom:7px;">&#8592;</button>
           <div class="definition">
             <h2>${found.word}</h2>
-            <div class="breakdown"><b>গঠন:</b> ${found.breakdown ? found.breakdown : "—"}</div>
-            <div class="meaning"><b>অর্থ:</b> ${found.meaning ? found.meaning : "—"}</div>
-            <div class="example"><b>উদাহরণ:</b> ${found.example ? found.example : "—"}</div>
+            <div class="breakdown">${found.breakdown ? found.breakdown : "—"}</div>
+            <div class="meaning">${found.meaning ? found.meaning : "—"}</div>
+            <div class="example">${found.example ? found.example : "—"}</div>
           </div>
         `;
         applyFontSize();
