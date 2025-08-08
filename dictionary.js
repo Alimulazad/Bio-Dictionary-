@@ -1,4 +1,419 @@
 var dictionary = [
+{
+  word: "alveoli (অ্যালভিওলাই)",
+  meaning: "ফুসফুসের ক্ষুদ্র বায়ুথলি যেখানে গ্যাস বিনিময় ঘটে",
+  breakdown: "alveol- (ক্ষুদ্র থলি) + -i (বহুবচন)",
+  example: "অক্সিজেন রক্তে প্রবেশ করার আগে alveoli-তে গ্যাস বিনিময় হয়"
+},
+{
+  word: "bronchi (ব্রংকাই)",
+  meaning: "ফুসফুসে বায়ু প্রবেশ করানোর প্রধান শ্বাসনালী শাখা",
+  breakdown: "bronch- (শ্বাসনালী) + -i (বহুবচন)",
+  example: "শ্বাসনালী থেকে বাতাস bronchi হয়ে ফুসফুসে প্রবেশ করে"
+},
+{
+  word: "bronchioles (ব্রংকিওলস)",
+  meaning: "ব্রংকাই থেকে বিভক্ত হয়ে ক্ষুদ্র শ্বাসনালী গঠন করে",
+  breakdown: "bronchi- (শ্বাসনালী) + -ole (ক্ষুদ্র)",
+  example: "bronchioles অক্সিজেনকে alveoli পর্যন্ত পৌঁছে দেয়"
+},
+{
+  word: "pleura (প্লিউরা)",
+  meaning: "ফুসফুস ঘিরে রাখা দুই স্তরের পাতলা ঝিল্লি",
+  breakdown: "pleur- (পাঁজরের পাশ) + -a (একবচন)",
+  example: "pleura ফুসফুসকে সুরক্ষা দেয় এবং ঘর্ষণ কমায়"
+},
+{
+  word: "pulmonary (পালমোনারি)",
+  meaning: "ফুসফুস সংক্রান্ত",
+  breakdown: "pulmon- (ফুসফুস) + -ary (সম্পর্কিত)",
+  example: "Pulmonary disease ফুসফুসের রোগকে নির্দেশ করে"
+},
+{
+  word: "diaphragm (ডায়াফ্রাম)",
+  meaning: "শ্বাস নেয়ার সময় নিচ থেকে ফুসফুসকে সাহায্য করে এমন পেশী",
+  breakdown: "dia- (মধ্যে) + phragma (বাধা বা বাঁধন)",
+  example: "Diaphragm সংকোচন করলে শ্বাস নেওয়া সহজ হয়"
+},
+{
+  word: "respiration (রেসপিরেশন)",
+  meaning: "শরীরে গ্যাস বিনিময়ের প্রক্রিয়া",
+  breakdown: "re- (পুনরায়) + spir- (শ্বাস নেওয়া) + -ation (প্রক্রিয়া)",
+  example: "Respiration জীবনের জন্য অপরিহার্য প্রক্রিয়া"
+},
+{
+  word: "ventilation (ভেন্টিলেশন)",
+  meaning: "শ্বাসনালীর মাধ্যমে বাতাস চলাচলের প্রক্রিয়া",
+  breakdown: "ventil- (বাতাস সরবরাহ) + -ation (প্রক্রিয়া)",
+  example: "সঠিক ventilation শ্বাসনালীর স্বাস্থ্য রক্ষায় সাহায্য করে"
+},
+{
+  word: "surfactant (সারফ্যাক্ট্যান্ট)",
+  meaning: "ফুসফুসের আলভিওলি যাতে ভেঙে না যায় সে জন্য তৈরী পদার্থ",
+  breakdown: "surface (পৃষ্ঠ) + actant (ক্রিয়াশীল পদার্থ)",
+  example: "নবজাতকের ফুসফুসে surfactant অভাব হলে শ্বাসকষ্ট হয়"
+},
+{
+  word: "oxygenation (অক্সিজেনেশন)",
+  meaning: "রক্তে অক্সিজেন যোগ করার প্রক্রিয়া",
+  breakdown: "oxygen (অক্সিজেন) + -ation (প্রক্রিয়া)",
+  example: "ফুসফুস রক্তকে oxygenation মাধ্যমে অক্সিজেন দেয়"
+},
+{
+  word: "carbon dioxide (কার্বন ডাইঅক্সাইড)",
+  meaning: "শ্বাস থেকে বের হওয়া বায়ুতে থাকা গ্যাস",
+  breakdown: "carbon (কার্বন) + dioxide (দুইটি অক্সিজেন পরমাণু)",
+  example: "ফুসফুস carbon dioxide শরীর থেকে বের করে দেয়"
+},
+{
+  word: "hypoxia (হাইপক্সিয়া)",
+  meaning: "শরীরে অক্সিজেনের অভাবের অবস্থা",
+  breakdown: "hypo- (অপর্যাপ্ত) + ox- (অক্সিজেন) + -ia (অবস্থা)",
+  example: "উচ্চ পাহাড়ে hypoxia হতে পারে"
+},
+{
+  word: "dyspnea (ডিসপ্নিয়া)",
+  meaning: "শ্বাসকষ্ট বা শ্বাস নিতে কষ্ট হওয়া",
+  breakdown: "dys- (কঠিন) + pnea (শ্বাস)",
+  example: "ব্যায়ামের পর dyspnea হওয়া স্বাভাবিক"
+},
+{
+  word: "pneumonia (নিউমোনিয়া)",
+  meaning: "ফুসফুসের প্রদাহজনিত সংক্রমণ",
+  breakdown: "pneumon- (ফুসফুস) + -ia (অবস্থা)",
+  example: "পানিবাহিত রোগ Pneumonia হতে পারে"
+},
+{
+  word: "tuberculosis (ক্ষয়রোগ)",
+  meaning: "ফুসফুসের ব্যাকটেরিয়াজনিত সংক্রমণ",
+  breakdown: "tuber- (গেঁটে উঠা অংশ) + -culosis (অবস্থা)",
+  example: "TB বা ক্ষয়রোগ ফুসফুসে মারাত্মক ক্ষতি করে"
+},
+{
+  word: "asthma (অ্যাজমা)",
+  meaning: "শ্বাসনালী সংকুচিত হয়ে শ্বাসকষ্ট হওয়া রোগ",
+  breakdown: "গ্রিক শব্দ asthma থেকে, অর্থ ‘হাঁপানি’",
+  example: "Asthma রোগীর ঠান্ডা বা ধুলাবালিতে শ্বাসকষ্ট বেড়ে যায়"
+},
+{
+  word: "emphysema (এমফাইসিমা)",
+  meaning: "ফুসফুসের আলভিওলি স্থায়ীভাবে ক্ষতিগ্রস্ত হওয়া",
+  breakdown: "em- (ভিতরে) + phys- (বায়ু) + -ema (অবস্থা)",
+  example: "ধূমপায়ীদের মধ্যে emphysema সাধারণ"
+},
+{
+  word: "fibrosis (ফাইব্রোসিস)",
+  meaning: "ফুসফুসে আঁশজাতীয় টিস্যুর অস্বাভাবিক বৃদ্ধি",
+  breakdown: "fibr- (আঁশ) + -osis (অবস্থা)",
+  example: "Pulmonary fibrosis রোগীর শ্বাস নিতে কষ্ট হয়"
+},
+{
+  word: "bronchitis (ব্রংকাইটিস)",
+  meaning: "ব্রংকাইয়ে প্রদাহ হওয়া",
+  breakdown: "bronch- (শ্বাসনালী) + -itis (প্রদাহ)",
+  example: "ঠান্ডায় bronchitis হতে পারে"
+},
+{
+  word: "pneumothorax (নিউমোথোরাক্স)",
+  meaning: "ফুসফুসের বাইরের পেশিতে বায়ু জমা হওয়া",
+  breakdown: "pneumo- (বায়ু) + thorax (বক্ষব্যাধি)",
+  example: "Pneumothorax হলে শ্বাসকষ্ট হয়"
+},
+{
+  word: "hemothorax (হিমোথোরাক্স)",
+  meaning: "বক্ষপটে রক্ত জমা হওয়া",
+  breakdown: "hemo- (রক্ত) + thorax (বক্ষব্যাধি)",
+  example: "Hemothorax গুরুতর চিকিৎসা প্রয়োজন"
+},
+{
+  word: "spirometry (স্পাইরোমেট্রি)",
+  meaning: "শ্বাস প্রশ্বাসের পরিমাপের পরীক্ষা",
+  breakdown: "spiro- (শ্বাস) + metry (পরিমাপ)",
+  example: "Spirometry দিয়ে ফুসফুসের কার্যক্ষমতা মাপা হয়"
+},
+{
+  word: "oxygen (অক্সিজেন)",
+  meaning: "জীবনের জন্য অপরিহার্য গ্যাস",
+  breakdown: "ox- (অক্সিজেন) + -gen (উৎপাদক)",
+  example: "oxygen ফুসফুস থেকে রক্তে প্রবেশ করে"
+},
+{
+  word: "cough (কাশি)",
+  meaning: "শ্বাসনালীতে раздражিত অবস্থায় বাতাসের জোরে বাহির হওয়া",
+  breakdown: "-",
+  example: "কাশি সাধারণত ফুসফুসের রোগের লক্ষণ"
+},
+{
+  word: "cyanosis (সায়ানোসিস)",
+  meaning: "রক্তে অক্সিজেন অভাবে ত্বকের নীলাভ রং",
+  breakdown: "cyan- (নীল) + -osis (অবস্থা)",
+  example: "cyanosis হলে দ্রুত চিকিৎসা প্রয়োজন"
+},
+{
+  word: "respiratory rate (শ্বাসের গতি)",
+  meaning: "এক মিনিটে শ্বাস নেওয়ার সংখ্যা",
+  breakdown: "respiratory (শ্বাস সম্পর্কিত) + rate (হারের পরিমাপ)",
+  example: "স্বাভাবিক respiratory rate প্রাপ্ত বয়স্কদের জন্য ১২-২০"
+},
+{
+  word: "inhalation (ইনহেলেশন)",
+  meaning: "বায়ু শ্বাসনালীর মাধ্যমে ফুসফুসে প্রবেশ",
+  breakdown: "in- (ভিতরে) + halation (শ্বাস নেওয়া)",
+  example: "Inhalation সময় diaphragm নিচের দিকে সরে"
+},
+{
+  word: "exhalation (এক্সহেলেশন)",
+  meaning: "বায়ু ফুসফুস থেকে বের হওয়া",
+  breakdown: "ex- (বাহিরে) + halation (শ্বাস নেওয়া)",
+  example: "Exhalation সময় diaphragm উপরে উঠে"
+},
+{
+  word: "respiratory system (শ্বাসতন্ত্র)",
+  meaning: "শ্বাস নেওয়া ও বায়ুপ্রবাহ নিয়ন্ত্রণকারী অঙ্গপ্রত্যঙ্গের সমষ্টি",
+  breakdown: "respiratory (শ্বাস সম্পর্কিত) + system (ব্যবস্থা)",
+  example: "Respiratory system শরীরের অক্সিজেন সরবরাহ নিশ্চিত করে"
+},
+{
+  word: "lung capacity (ফুসফুসের ধারণক্ষমতা)",
+  meaning: "একবারে ফুসফুসে ধারণকৃত বায়ুর পরিমাণ",
+  breakdown: "lung (ফুসফুস) + capacity (ধারণক্ষমতা)",
+  example: "শ্বাস প্রশ্বাসের স্বাস্থ্য lung capacity দ্বারা নির্ধারিত হয়"
+},
+{
+  word: "tidal volume (টাইডাল ভলিউম)",
+  meaning: "প্রতিবার স্বাভাবিক শ্বাসের সময় গ্রহণকৃত বায়ুর পরিমাণ",
+  breakdown: "tidal (প্রবাহিত) + volume (আয়তন)",
+  example: "tidal volume প্রাপ্তবয়স্কদের জন্য প্রায় ৫০০ মিলিলিটার"
+},
+
+  
+{
+  word: "lobes (লোবস)",
+  meaning: "ফুসফুসের বড় বড় ভাগ বা অংশ",
+  breakdown: "lob- (ভাগ) + -es (বহুবচন)",
+  example: "মানব ফুসফুসের ডান পাশে তিনটি lobes থাকে"
+},
+{
+  word: "carina (কারিনা)",
+  meaning: "ট্রাকেয়ার শেষ অংশ যেখানে ব্রংকাই শুরু হয়",
+  breakdown: "ল্যাটিন শব্দ Carina, অর্থ নৌকার ঢেউয়ের অংশ",
+  example: "কারিনায় সেন্সর থাকায় শ্বাসনালীর প্রতিক্রিয়া ঘটে"
+},
+{
+  word: "intercostal muscles (ইন্টারকস্টাল মাসলস)",
+  meaning: "রিবের মধ্যে থাকা পেশী যা শ্বাস নিতে সাহায্য করে",
+  breakdown: "inter- (মাঝে) + costal (পাঁজরের) + muscles (পেশী)",
+  example: "Intercostal muscles সংকুচিত হলে শ্বাস নেওয়া সহজ হয়"
+},
+{
+  word: "mediastinum (মেডিয়াসটিনাম)",
+  meaning: "বক্ষগহ্বরের মধ্যবর্তী অঞ্চল যেখানে হার্ট ও ফুসফুস থাকে",
+  breakdown: "media- (মধ্য) + stinum (অবস্থান)",
+  example: "Mediastinum হার্ট ও বৃহত্তর শিরাগুলো ধারণ করে"
+},
+{
+  word: "surfactant deficiency (সারফ্যাক্ট্যান্ট ঘাটতি)",
+  meaning: "ফুসফুসে সারফ্যাক্ট্যান্টের অভাব যা শ্বাসকষ্ট সৃষ্টি করে",
+  breakdown: "surfactant (পৃষ্ঠ ক্রিয়াশীল পদার্থ) + deficiency (ঘাটতি)",
+  example: "নবজাতকের শ্বাসকষ্টের অন্যতম কারণ surfactant deficiency"
+},
+{
+  word: "respiratory distress syndrome (শ্বাসকষ্ট সিন্ড্রোম)",
+  meaning: "ফুসফুসের অপর্যাপ্ত অক্সিজেন সরবরাহের তীব্র অবস্থা",
+  breakdown: "respiratory (শ্বাস সম্পর্কিত) + distress (কষ্ট) + syndrome (সিন্ড্রোম)",
+  example: "নবজাতকের RDS একটি গুরুতর স্বাস্থ্য সমস্যা"
+},
+{
+  word: "oxygen therapy (অক্সিজেন থেরাপি)",
+  meaning: "রোগীর অক্সিজেনের মাত্রা বাড়ানোর চিকিৎসা পদ্ধতি",
+  breakdown: "oxygen (অক্সিজেন) + therapy (চিকিৎসা)",
+  example: "শ্বাসকষ্ট হলে oxygen therapy প্রয়োগ করা হয়"
+},
+{
+  word: "pulmonary edema (পালমোনারি এডিমা)",
+  meaning: "ফুসফুসে অতিরিক্ত তরল জমা হওয়া",
+  breakdown: "pulmonary (ফুসফুসের) + edema (ফোলা)",
+  example: "Pulmonary edema হলে শ্বাসকষ্ট বেড়ে যায়"
+},
+{
+  word: "atelectasis (অ্যাটেলেকটাসিস)",
+  meaning: "ফুসফুসের অংশ আংশিক বা সম্পূর্ণভাবে সংকুচিত হওয়া",
+  breakdown: "a- (না) + tele- (পূর্ণ) + ectasis (বিস্তৃতি)",
+  example: "Atelectasis ফুসফুসের অক্সিজেন গ্রহণ কমিয়ে দেয়"
+},
+{
+  word: "chest tube (চেস্ট টিউব)",
+  meaning: "বক্ষগহ্বর থেকে তরল বা বায়ু বের করার টিউব",
+  breakdown: "chest (বক্ষ) + tube (নলী)",
+  example: "Pneumothorax হলে chest tube স্থাপন করা হয়"
+},
+{
+  word: "chronic obstructive pulmonary disease (COPD) (দীর্ঘস্থায়ী অবরোধক ফুসফুস রোগ)",
+  meaning: "শ্বাসনালীর দীর্ঘস্থায়ী বাধা সৃষ্টি করে শ্বাসকষ্টের রোগ",
+  breakdown: "chronic (দীর্ঘস্থায়ী) + obstructive (অবরোধক) + pulmonary (ফুসফুসের) + disease (রোগ)",
+  example: "ধূমপায়ীদের মধ্যে COPD বেশিরভাগ দেখা যায়"
+},
+{
+  word: "cystic fibrosis (সিস্টিক ফাইব্রোসিস)",
+  meaning: "একটি জেনেটিক রোগ যা শ্বাসনালী ও অন্যান্য অঙ্গ ক্ষতিগ্রস্ত করে",
+  breakdown: "cystic (সিস্টিক) + fibrosis (আঁশের বৃদ্ধি)",
+  example: "Cystic fibrosis রোগীর ফুসফুসে প্যাথলজি হয়"
+},
+{
+  word: "hyperventilation (হাইপারভেন্টিলেশন)",
+  meaning: "অসাধারণ দ্রুত শ্বাস নেওয়ার অবস্থা",
+  breakdown: "hyper- (অতিরিক্ত) + ventilation (শ্বাস চলাচল)",
+  example: "anxiety-তে hyperventilation দেখা যায়"
+},
+{
+  word: "hypoventilation (হাইপোভেন্টিলেশন)",
+  meaning: "অপ্রতুল শ্বাস চলাচলের অবস্থা",
+  breakdown: "hypo- (অপর্যাপ্ত) + ventilation (শ্বাস চলাচল)",
+  example: "Hypoventilation হলে শরীরে অক্সিজেনের ঘাটতি হয়"
+},
+{
+  word: "larynx (ল্যারিংক্স)",
+  meaning: "গলা যুক্ত শ্বাসনালীর অংশ যা কণ্ঠ সৃষ্টি করে",
+  breakdown: "গ্রিক শব্দ larynx থেকে",
+  example: "Larynx শ্বাসনালী ও খাদ্যের পথ আলাদা করে"
+},
+{
+  word: "mucus (মিউকাস)",
+  meaning: "শ্বাসনালীর অভ্যন্তরে সৃষ্ট চটচটে পদার্থ",
+  breakdown: "ল্যাটিন mucus থেকে",
+  example: "মিউকাস শ্বাসনালীকে আর্দ্র ও পরিষ্কার রাখে"
+},
+{
+  word: "nasal cavity (নাসার গহ্বর)",
+  meaning: "নাকের ভেতরের গহ্বর যা বায়ু শ্বাসনালীতে নিয়ে যায়",
+  breakdown: "nasal (নাকের) + cavity (গহ্বর)",
+  example: "Nasal cavity বায়ু শুষ্ক ও ফিল্টার করে"
+},
+{
+  word: "pulmonary artery (পালমোনারি আর্টারি)",
+  meaning: "হৃদয় থেকে ফুসফুসে অক্সিজেনহীন রক্ত বহনকারী শিরা",
+  breakdown: "pulmonary (ফুসফুসের) + artery (শিরা)",
+  example: "Pulmonary artery অক্সিজেনহীন রক্ত বহন করে"
+},
+{
+  word: "pulmonary vein (পালমোনারি ভেইন)",
+  meaning: "ফুসফুস থেকে হৃদয়ে অক্সিজেনসমৃদ্ধ রক্ত বহনকারী শিরা",
+  breakdown: "pulmonary (ফুসফুসের) + vein (শিরা)",
+  example: "Pulmonary vein হৃদয়ে অক্সিজেন সমৃদ্ধ রক্ত নিয়ে যায়"
+},
+{
+  word: "respiratory membrane (শ্বাসযন্ত্র ঝিল্লি)",
+  meaning: "অ্যালভিওলি ও রক্তনালীর মধ্যে গ্যাস বিনিময়কারী পাতলা ঝিল্লি",
+  breakdown: "respiratory (শ্বাস সম্পর্কিত) + membrane (ঝিল্লি)",
+  example: "Respiratory membrane গ্যাস বিনিময় নিশ্চিত করে"
+},
+{
+  word: "rhonchi (রনকি)",
+  meaning: "শ্বাসনালীর সংকোচনে শোনা যায় এমন আওয়াজ",
+  breakdown: "রনকি শব্দ থেকে",
+  example: "Rhonchi শ্বাসনালীতে বাধা নির্দেশ করে"
+},
+{
+  word: "sinuses (সাইনাস)",
+  meaning: "নাকের চারপাশের শ্লেষ্মাযুক্ত গহ্বর",
+  breakdown: "sinus (গহ্বর) + -es (বহুবচন)",
+  example: "Sinuses শ্বাস নেওয়ার পথ শুষ্ক রাখতে সাহায্য করে"
+},
+{
+  word: "thorax (থোরাক্স)",
+  meaning: "বক্ষগহ্বর, যেখানে ফুসফুস ও হৃদয় থাকে",
+  breakdown: "গ্রিক শব্দ thorax থেকে",
+  example: "Thorax ফুসফুসের সুরক্ষায় সাহায্য করে"
+},
+{
+  word: "trachea (ট্রাকিয়া)",
+  meaning: "গলা থেকে ফুসফুস পর্যন্ত বায়ু পরিবহনকারী নালী",
+  breakdown: "গ্রিক শব্দ trachea থেকে",
+  example: "Trachea বায়ু ফুসফুসে নিয়ে যায়"
+},
+{
+  word: "ventilation-perfusion ratio (ভেন্টিলেশন-পারফিউশন রেশিও)",
+  meaning: "ফুসফুসে বায়ু প্রবাহ ও রক্ত সঞ্চালনের অনুপাত",
+  breakdown: "ventilation (শ্বাস চলাচল) + perfusion (রক্ত সঞ্চালন) + ratio (অনুপাত)",
+  example: "স্বাস্থ্যকর ফুসফুসে ventilation-perfusion ratio সমান হয়"
+},
+{
+  word: "vocal cords (ভোকাল কর্ডস)",
+  meaning: "ল্যারিঙ্ক্সে অবস্থিত কণ্ঠ সৃষ্টিকারী স্নায়বৃত্ত",
+  breakdown: "vocal (কণ্ঠ) + cords (সরু থ্রেড)",
+  example: "Vocal cords শব্দ উৎপাদনে গুরুত্বপূর্ণ ভূমিকা রাখে"
+},
+{
+  word: "wheezing (হুইজিং)",
+  meaning: "শ্বাসনালীর সংকোচনে সৃষ্ট স্ফীত আওয়াজ",
+  breakdown: "-",
+  example: "Asthma রোগীর wheezing শোনা যায়"
+},
+{
+  word: "acute respiratory distress syndrome (ARDS) (তীব্র শ্বাসকষ্ট সিন্ড্রোম)",
+  meaning: "ফুসফুসের তীব্র প্রদাহজনিত অবস্থার নাম",
+  breakdown: "acute (তীব্র) + respiratory distress syndrome (শ্বাসকষ্ট সিন্ড্রোম)",
+  example: "ARDS গুরুতর শ্বাসকষ্ট সৃষ্টি করে"
+},
+{
+  word: "antitussive (অ্যান্টিটাসিভ)",
+  meaning: "কাশি কমানোর ওষুধ",
+  breakdown: "anti- (বিরোধী) + tussive (কাশি সম্পর্কিত)",
+  example: "Antitussive কাশি উপশমে ব্যবহৃত হয়"
+},
+{
+  word: "atelectasis (অ্যাটেলেকটাসিস)",
+  meaning: "ফুসফুসের অংশের সংকোচন বা পতন",
+  breakdown: "a- (না) + tele- (পূর্ণ) + ectasis (বিস্তৃতি)",
+  example: "Atelectasis ফুসফুসের কার্যকারিতা কমায়"
+},
+{
+  word: "blood gas analysis (রক্তে গ্যাস বিশ্লেষণ)",
+  meaning: "রক্তের অক্সিজেন ও কার্বন ডাইঅক্সাইড পরিমাপের পরীক্ষা",
+  breakdown: "blood (রক্ত) + gas (গ্যাস) + analysis (বিশ্লেষণ)",
+  example: "Blood gas analysis শ্বাসতন্ত্রের কার্যকারিতা নির্ণয় করে"
+},
+{
+  word: "bronchodilator (ব্রংকোডাইলেটর)",
+  meaning: "ব্রংকাই প্রশস্ত করার ওষুধ",
+  breakdown: "broncho- (ব্রংকাই) + dilator (প্রশস্তকারী)",
+  example: "Asthma রোগীর জন্য bronchodilator জরুরি"
+},
+{
+  word: "ciliary escalator (সিলিয়ারি এসকালেটর)",
+  meaning: "শ্বাসনালীর ছোট ছোট রূপকণা যা ধুলো সরায়",
+  breakdown: "ciliary (রূপকণা) + escalator (আসানসার)",
+  example: "Ciliary escalator শ্বাসনালী পরিষ্কার রাখে"
+},
+{
+  word: "compliance (কমপ্লায়েন্স)",
+  meaning: "ফুসফুসের প্রসারণের ক্ষমতা",
+  breakdown: "-",
+  example: "ফুসফুসের compliance কমে গেলে শ্বাসকষ্ট হয়"
+},
+{
+  word: "cyanosis (সায়ানোসিস)",
+  meaning: "অক্সিজেনের অভাবে ত্বকের নীলাভতা",
+  breakdown: "cyan- (নীল) + -osis (অবস্থা)",
+  example: "Cyanosis গুরুতর রোগের লক্ষণ হতে পারে"
+},
+{
+  word: "epiglottis (এপিগ্লটিস)",
+  meaning: "গলার উপরে থাকা লেজাকৃতি ঝিল্লি যা খাদ্য নালীর পথ বন্ধ করে দেয়",
+  breakdown: "epi- (উপর) + glottis (গলার অংশ)",
+  example: "Epiglottis খাদ্য গলায় ঢুকতে বাধা দেয়"
+},
+{
+  word: "expectorant (এক্সপেক্টোরেন্ট)",
+  meaning: "কাশির মাধ্যমে মিউকাস বের করতে সাহায্য করে এমন ওষুধ",
+  breakdown: "expect- (বের করা) + orant (ক্রিয়াশীল পদার্থ)",
+  example: "Expectorant কাশি উপশমে ব্যবহৃত হয়"
+},
+
+
+
+
+  // ফুসফুস শেষ 
   {
     word: "axon",
     meaning: "একটি স্নায়ুকোষের প্রসারিত অংশ যা বিদ্যুৎ সংকেত পরিবহন করে।",
